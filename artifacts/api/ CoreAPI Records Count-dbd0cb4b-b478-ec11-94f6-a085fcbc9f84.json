@@ -1,0 +1,114 @@
+{
+	"id": "dbd0cb4b-b478-ec11-94f6-a085fcbc9f84",
+	"createdAt": "2022-02-23T11:22:40.566Z",
+	"createdBy": "lloyd",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "BCD3DD46-9F09-4893-EB5E-14678580BC21",
+			"method": "POST",
+			"path": "/Count",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "bdc1db01-b882-458d-fc51-79109e20e75d",
+							"name": "Resp",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "Req",
+					"objectType": "object"
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "73961bb8-c9fb-4b95-e66c-340d870bc746",
+			"name": "Req",
+			"description": "Request",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "beaea477-3141-425d-959c-778af79cdbd4",
+					"name": "table",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "08337e18-8547-41d9-c760-35e2de3f81b7",
+			"name": "Resp",
+			"description": "Response",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "a493de35-1eea-4d33-be1b-6cea363e3dd1",
+					"name": "counter",
+					"objectType": "integer",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": " CoreAPI Records Count",
+	"endpoint": "https://explored.neptune-software.com/api/functions/Dictionary",
+	"ver": "22.8.3.812",
+	"version": "2.2.0",
+	"description": "Table Records Count",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "d9ca9bef-0313-ed11-bd6e-000d3ab1d9ff",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

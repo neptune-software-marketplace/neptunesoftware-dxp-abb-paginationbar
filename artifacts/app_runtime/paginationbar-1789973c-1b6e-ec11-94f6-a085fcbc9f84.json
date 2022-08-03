@@ -1,0 +1,816 @@
+{
+	"id": "1789973c-1b6e-ec11-94f6-a085fcbc9f84",
+	"createdAt": "2022-02-23T11:22:40.883Z",
+	"updatedAt": "2022-08-03T08:12:37.003Z",
+	"createdBy": "lloyd",
+	"changedBy": "kristin.eliassen@neptune-software.com",
+	"objects": [
+		{
+			"fieldNo": "79df492d-7155-4501-842f-74885f283129",
+			"fieldName": "oPageFooter",
+			"fieldParent": 0,
+			"fieldType": "sap.m.Bar",
+			"script": "",
+			"request": [],
+			"response": [],
+			"attributes": [
+				{
+					"attribute": "position",
+					"grouping": "Parent",
+					"value": "setFooter",
+					"script": "",
+					"translation": []
+				}
+			],
+			"data": [
+				{
+					"fieldNo": "6c2c0ae3-381a-425b-d3f5-a8b8943e1c97",
+					"fieldName": "Left",
+					"fieldParent": "79df492d-7155-4501-842f-74885f283129",
+					"fieldType": "neptune.BarContent",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "position",
+							"grouping": "Parent",
+							"value": "ContentLeft",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "11243bcf-94a3-4371-9407-1ad3a17335cf",
+							"fieldName": "toolPagination",
+							"fieldParent": "6c2c0ae3-381a-425b-d3f5-a8b8943e1c97",
+							"fieldType": "sap.m.Toolbar",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "styleClass",
+									"grouping": "Properties",
+									"value": "toolPagination",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "enableCompactMode",
+									"grouping": "Properties",
+									"value": "true",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "design",
+									"grouping": "Properties",
+									"value": "Transparent",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "position",
+									"grouping": "Parent",
+									"value": "HeaderToolbar",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "638cbc58-37ff-4f3f-852c-028f7afe1f0d",
+									"fieldName": "toolPaginationTextShowItems",
+									"fieldParent": "11243bcf-94a3-4371-9407-1ad3a17335cf",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "textAlign",
+											"grouping": "Properties",
+											"value": "Center",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Items per page",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "e6382db2-2d0d-4d63-d13d-b26cd03a7fb6",
+									"fieldName": "toolPaginationShowItems",
+									"fieldParent": "11243bcf-94a3-4371-9407-1ad3a17335cf",
+									"fieldType": "sap.m.Select",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "width",
+											"grouping": "Properties",
+											"value": "100px",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "selectedKey",
+											"grouping": "Properties",
+											"value": "10",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "change",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": [
+												"==OBJECT STRING==",
+												"if (toolPaginationShowItems.getVisible()) {\r",
+												"    paginationBar.pagination.take = parseInt(toolPaginationShowItems.getSelectedKey());\r",
+												"}\r",
+												"\r",
+												"paginationBar.pagination.index = 0;\r",
+												"paginationBar.run(true); \r",
+												"paginationBar.handlePagination();"
+											],
+											"language": "javascript",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "790ff927-14fd-4794-d94b-5efc6a70368f",
+											"fieldName": "toolPaginationItemDefault",
+											"fieldParent": "e6382db2-2d0d-4d63-d13d-b26cd03a7fb6",
+											"fieldType": "sap.ui.core.ListItem",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": []
+										},
+										{
+											"fieldNo": "d9595fd8-17da-41d6-dc68-7f045eaf45c7",
+											"fieldName": "toolPaginationItem10",
+											"fieldParent": "e6382db2-2d0d-4d63-d13d-b26cd03a7fb6",
+											"fieldType": "sap.ui.core.ListItem",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "10",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "key",
+													"grouping": "Properties",
+													"value": "10",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "7d503550-a9df-4cb3-8ed6-30706ab28ed9",
+											"fieldName": "toolPaginationItem25",
+											"fieldParent": "e6382db2-2d0d-4d63-d13d-b26cd03a7fb6",
+											"fieldType": "sap.ui.core.ListItem",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "25",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "key",
+													"grouping": "Properties",
+													"value": "25",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "f98db0af-3fae-450d-e92a-f598959f5ec4",
+											"fieldName": "toolPaginationItem50",
+											"fieldParent": "e6382db2-2d0d-4d63-d13d-b26cd03a7fb6",
+											"fieldType": "sap.ui.core.ListItem",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "50",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "key",
+													"grouping": "Properties",
+													"value": "50",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "e0e608c2-d8b5-48dd-f932-c0c3b9a440e5",
+											"fieldName": "toolPaginationItem100",
+											"fieldParent": "e6382db2-2d0d-4d63-d13d-b26cd03a7fb6",
+											"fieldType": "sap.ui.core.ListItem",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "100",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "key",
+													"grouping": "Properties",
+													"value": "100",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "bfc2f3e6-1cdb-4637-a9b0-d9ca3491f988",
+											"fieldName": "toolPaginationItem250",
+											"fieldParent": "e6382db2-2d0d-4d63-d13d-b26cd03a7fb6",
+											"fieldType": "sap.ui.core.ListItem",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "250",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "key",
+													"grouping": "Properties",
+													"value": "250",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "db9f28eb-232b-4c23-b3f4-dc5f55114d67",
+											"fieldName": "toolPaginationItem500",
+											"fieldParent": "e6382db2-2d0d-4d63-d13d-b26cd03a7fb6",
+											"fieldType": "sap.ui.core.ListItem",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "500",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "key",
+													"grouping": "Properties",
+													"value": "500",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "2acd8572-c980-4981-ecee-00441584340b",
+									"fieldName": "toolPaginationSpacer",
+									"fieldParent": "11243bcf-94a3-4371-9407-1ad3a17335cf",
+									"fieldType": "sap.m.ToolbarSpacer",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": []
+								},
+								{
+									"fieldNo": "e5566f7b-92d8-4f29-aee7-e861b43c81c2",
+									"fieldName": "toolPaginationFirst",
+									"fieldParent": "11243bcf-94a3-4371-9407-1ad3a17335cf",
+									"fieldType": "sap.m.Button",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://fa-solid/angle-double-left",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "enabled",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "press",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": [
+												"==OBJECT STRING==",
+												"paginationBar.pagination.index = 0;\r",
+												"paginationBar.run(true); \r",
+												"paginationBar.handlePagination();"
+											],
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "ad25f0b2-50a8-4bea-f768-19f7ac919a34",
+									"fieldName": "toolPaginationPrev",
+									"fieldParent": "11243bcf-94a3-4371-9407-1ad3a17335cf",
+									"fieldType": "sap.m.Button",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://fa-solid/angle-left",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "enabled",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "press",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": [
+												"==OBJECT STRING==",
+												"paginationBar.pagination.index--;\r",
+												"paginationBar.run(true); \r",
+												"paginationBar.handlePagination();"
+											],
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "8065098b-248b-41ee-9d90-a6be459c2605",
+									"fieldName": "toolPaginationPages",
+									"fieldParent": "11243bcf-94a3-4371-9407-1ad3a17335cf",
+									"fieldType": "sap.m.SegmentedButton",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "styleClassVisibility",
+											"grouping": "Properties",
+											"value": "sapUiHideOnPhone",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "selectionChange",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": [
+												"==OBJECT STRING==",
+												"paginationBar.pagination.index = parseInt(this.getSelectedKey());\r",
+												"paginationBar.run(true); \r",
+												"paginationBar.handlePagination();"
+											],
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "867a19bb-d278-464a-b4ed-e89ff5daf789",
+									"fieldName": "toolPaginationText",
+									"fieldParent": "11243bcf-94a3-4371-9407-1ad3a17335cf",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "visible",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "textAlign",
+											"grouping": "Properties",
+											"value": "Center",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "0/0",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "5534f34f-00de-45f7-8c82-7c2ba274ac6d",
+									"fieldName": "toolPaginationNext",
+									"fieldParent": "11243bcf-94a3-4371-9407-1ad3a17335cf",
+									"fieldType": "sap.m.Button",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://fa-solid/angle-right",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "enabled",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "press",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": [
+												"==OBJECT STRING==",
+												"paginationBar.pagination.index++;\r",
+												"paginationBar.run(true); \r",
+												"paginationBar.handlePagination();"
+											],
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "bd720a04-8d62-48b6-97a0-e113f8f57e04",
+									"fieldName": "toolPaginationLast",
+									"fieldParent": "11243bcf-94a3-4371-9407-1ad3a17335cf",
+									"fieldType": "sap.m.Button",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://fa-solid/angle-double-right",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "enabled",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "press",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": [
+												"==OBJECT STRING==",
+												"var maxIndex = (paginationBar.pagination.count / paginationBar.pagination.take);\r",
+												"maxIndex = Math.ceil(maxIndex);\r",
+												"\r",
+												"paginationBar.pagination.index = maxIndex - 1;\r",
+												"paginationBar.run(true); \r",
+												"paginationBar.handlePagination();"
+											],
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "5604f56a-0d76-4cf3-fb95-e97f807908ee",
+									"fieldName": "toolPaginationSep",
+									"fieldParent": "11243bcf-94a3-4371-9407-1ad3a17335cf",
+									"fieldType": "sap.m.ToolbarSeparator",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": []
+								},
+								{
+									"fieldNo": "b1ba56cf-e680-4fc1-8a2c-f1873de38cae",
+									"fieldName": "toolPaginationTitle",
+									"fieldParent": "11243bcf-94a3-4371-9407-1ad3a17335cf",
+									"fieldType": "sap.m.ObjectNumber",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "styleClassMargin",
+											"grouping": "Properties",
+											"value": "sapUiTinyMarginBeginEnd",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "e5fed5ac-8fad-46bb-a094-448030162d93",
+					"fieldName": "Readme",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Text",
+					"script": [
+						"==OBJECT STRING==",
+						"******************************************************",
+						"",
+						"-> When using the multimodel:",
+						"Copy the following code to the ajax Success of the api retrieving the multimodal data",
+						"",
+						"paginationBar.run();",
+						"paginationBar.handlePagination();",
+						"",
+						"",
+						"-> When using the API call with restriction:",
+						"Copy the following code to the init or the action that triggers the Bar to be visible ",
+						"",
+						"var options = {",
+						"    data: { table: \"Your DB table\" }",
+						"};",
+						"",
+						"apioRestAPICount(options);",
+						"",
+						"******************************************************",
+						"",
+						"In both cases it's also necessary to choose the option on the JavaScript file paginationBar",
+						"",
+						"******************************************************",
+						"",
+						"Add this style class to the stylesheet",
+						"",
+						".toolPagination {",
+						"    border: none;",
+						"    height: 3rem;",
+						"}"
+					],
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "dfbe2e4b-60d5-4868-a726-af185d561fc4",
+					"fieldName": "oRestAPICount",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"restSource": "DBD0CB4B-B478-EC11-94F6-A085FCBC9F84",
+					"restOperation": "BCD3DD46-9F09-4893-EB5E-14678580BC21",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "setInitLoad",
+							"grouping": "Model",
+							"value": "online",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "ajaxSuccess",
+							"grouping": "Events",
+							"value": "Anonymous Function",
+							"script": [
+								"==OBJECT STRING==",
+								"paginationBar.pagination.count = xhr.responseJSON.counter",
+								"paginationBar.run();",
+								"paginationBar.handlePagination()"
+							],
+							"language": "javascript",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "a496d380-d241-4e68-b9ca-3367b324ba62",
+					"fieldName": "paginationBar",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": [
+						"==OBJECT STRING==",
+						"var paginationBar = {",
+						"    configuration: {",
+						"        maxNumberOfButtons: 6 //number maximo of page buttons ",
+						"    },",
+						"    pagination: {",
+						"        take: 10,",
+						"        index: 0,",
+						"        count: 0",
+						"    },",
+						"    run: function (keepIndex) {",
+						"",
+						"        // Pagination",
+						"",
+						"        if (!keepIndex) paginationBar.pagination.index = 0;",
+						"",
+						"        // Records to Get",
+						"        pagination = {",
+						"            take: paginationBar.pagination.take,",
+						"            skip: paginationBar.pagination.take * paginationBar.pagination.index",
+						"        }",
+						"",
+						"",
+						"        //Example",
+						"        //MultiModel with all the data",
+						"",
+						"        // paginationBar.pagination.count= modelYour_MultiModel.getData().length;",
+						"        // modelYour_Object.setData( modelYour_MultiModel.getData().slice( paginationBar.pagination.take *paginationBar.pagination.index , ",
+						"        //                                   paginationBar.pagination.take +( paginationBar.pagination.index *paginationBar.pagination.take)))",
+						"",
+						"        //OR",
+						"        //Api Call with restriction ",
+						"",
+						"        // var opts = {",
+						"        //     parameters: {",
+						"        //         take: paginationBar.pagination.take,",
+						"        //         skip: paginationBar.pagination.take * paginationBar.pagination.index",
+						"        //     }",
+						"        // }",
+						"",
+						"        // apiYour_API(opts);",
+						"",
+						"    },",
+						"    handlePagination() {",
+						"",
+						"        var maxIndex = (paginationBar.pagination.count / paginationBar.pagination.take);",
+						"        maxIndex = Math.ceil(maxIndex);",
+						"",
+						"        if (paginationBar.pagination.count <= paginationBar.pagination.take) maxIndex = 1;",
+						"",
+						"        toolPaginationFirst.setEnabled(true);",
+						"        toolPaginationPrev.setEnabled(true);",
+						"        toolPaginationNext.setEnabled(true);",
+						"        toolPaginationLast.setEnabled(true);",
+						"",
+						"        if (paginationBar.pagination.index < 0) paginationBar.pagination.index = 0;",
+						"",
+						"        if (paginationBar.pagination.index === 0) {",
+						"            toolPaginationFirst.setEnabled(false);",
+						"            toolPaginationPrev.setEnabled(false);",
+						"        }",
+						"",
+						"        if ((paginationBar.pagination.index + 1) >= maxIndex) {",
+						"            toolPaginationNext.setEnabled(false);",
+						"            toolPaginationLast.setEnabled(false);",
+						"        }",
+						"",
+						"        toolPaginationPages.destroyItems();",
+						"",
+						"        var numItems = 0;",
+						"        var maxItems = paginationBar.configuration.maxNumberOfButtons - 1;",
+						"        var startItem = Number.parseInt(paginationBar.pagination.index - (maxItems / 2));",
+						"",
+						"        if (startItem < 0) startItem = 0;",
+						"",
+						"        for (i = startItem; i < maxIndex; i++) {",
+						"            if (numItems <= maxItems) toolPaginationPages.addItem(new sap.m.SegmentedButtonItem({ text: i + 1, key: i }));",
+						"            numItems++;",
+						"        }",
+						"",
+						"        toolPaginationPages.setSelectedKey(paginationBar.pagination.index);",
+						"        toolPaginationTitle.setNumber((paginationBar.pagination.index + 1) + \"/\" + maxIndex);",
+						"",
+						"    }",
+						"}",
+						""
+					],
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"ver": "22.8.3.1012",
+	"application": "paginationbar",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": true,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "C",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_fiori_3",
+	"ui5_version": "",
+	"ui5_language": null,
+	"cus_theme": "",
+	"css": [
+		"==OBJECT STRING==",
+		"",
+		""
+	],
+	"header": "",
+	"manifest": "",
+	"globalScript": "",
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"apis": [
+		{
+			"id": "DBD0CB4B-B478-EC11-94F6-A085FCBC9F84",
+			"name": " CoreAPI Records Count",
+			"ver": "22.8.3.812",
+			"updatedAt": "2022-08-03T08:12:36.953Z",
+			"changedBy": "kristin.eliassen@neptune-software.com"
+		}
+	]
+}

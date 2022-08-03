@@ -1,0 +1,55 @@
+{
+	"id": "D9CA9BEF-0313-ED11-BD6E-000D3AB1D9FF",
+	"createdAt": "2022-08-03T08:11:55.413Z",
+	"createdBy": "kristin.eliassen@neptune-software.com",
+	"git": {
+		"targetServers": [],
+		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-paginationbar",
+		"testServers": []
+	},
+	"name": "neptunesoftware-dxp-abb-paginationbar",
+	"description": null,
+	"ver": "22.8.3.813",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "1789973C-1B6E-EC11-94F6-A085FCBC9F84",
+			"ver": "22.8.3.1012",
+			"application": "paginationbar",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [
+		{
+			"id": "DBD0CB4B-B478-EC11-94F6-A085FCBC9F84",
+			"name": " CoreAPI Records Count",
+			"ver": "22.8.3.812",
+			"description": "Table Records Count",
+			"apiGroup": null
+		}
+	],
+	"odataMock": [],
+	"odataSource": [],
+	"dictionary": [],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"wf_definition": [],
+	"department": [],
+	"script_scheduler": [],
+	"connector": []
+}
